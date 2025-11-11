@@ -1,0 +1,16 @@
+# Logs
+*.log
+
+# Temp files
+*.tmp
+.DS_Store
+
+# Backup files
+*.bak
+*.backup
+
+# PID files
+*.pid
+
+# Local configuration
+.env.local
