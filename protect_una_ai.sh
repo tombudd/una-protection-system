@@ -27,8 +27,8 @@ ERR_PERMISSION_DENIED=6
 
 # Logging with severity levels
 log_message() {
-    local level="${1}"
-    local message="${2}"
+    local level="${1:-INFO}"
+    local message="${2:-}"
     local timestamp=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
     echo "[$timestamp] [$level] $message" | tee -a "$LOG_FILE"
 }
